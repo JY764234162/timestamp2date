@@ -19,7 +19,7 @@ t2d
 ## es6 模块使用
 
 ```bash
-npm i my-vite-app
+npm i timestamp2date
 ```
 
 ```javascript
@@ -30,7 +30,7 @@ console.log(timestamp2date(1678297600000));
 ## commonjs 模块使用
 
 ```bash
-npm i my-vite-app
+npm i timestamp2date
 ```
 
 ```javascript

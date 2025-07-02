@@ -24,7 +24,8 @@
   "files": [
     "bin/*",
     "dist/*",
-    "types/*"
+    "types/*",
+    "README.md"
   ],
   "devDependencies": {
     "@babel/core": "^7.27.7",
