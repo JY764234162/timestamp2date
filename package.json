@@ -1,0 +1,47 @@
+{
+  "name": "timestamp2date",
+  "private": false,
+  "version": "0.0.5",
+  "license": "MIT",
+  "bin": {
+    "t2d": "./bin/timestamp2date.js",
+    "timestamp2date": "./bin/timestamp2date.js"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "npm run build && node ./bin/timestamp2date.js",
+    "build": "rollup -c"
+  },
+  "files": [
+    "bin/*",
+    "dist/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/node": "^22.7.5",
+    "rollup-plugin-delete": "^3.0.1",
+    "tslib": "^2.8.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0"
+  },
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "dayjs": "^1.11.13",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
+  }
+}
