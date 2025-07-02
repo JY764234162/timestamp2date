@@ -1,7 +1,7 @@
 {
   "name": "timestamp2date",
   "private": false,
-  "version": "0.0.16",
+  "version": "0.0.17",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -26,7 +26,8 @@
     "bin/*",
     "dist/*",
     "types/*",
-    "README.md"
+    "README.md",
+    "assets/*"
   ],
   "devDependencies": {
     "@babel/core": "^7.27.7",
