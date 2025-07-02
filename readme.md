@@ -24,7 +24,7 @@ npm i timestamp2date
 
 ```javascript
 import timestamp2date from 'timestamp2date';
-console.log(timestamp2date(1678297600000));
+console.log(timestamp2date(1678297600));
 ```
 
 ## commonjs 模块使用
@@ -35,5 +35,5 @@ npm i timestamp2date
 
 ```javascript
 const timestamp2date = require('timestamp2date');
-console.log(timestamp2date(1678297600000));
+console.log(timestamp2date(1678297600));
 ```

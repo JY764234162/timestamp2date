@@ -23,6 +23,7 @@ var dayjs_minExports = requireDayjs_min();
 var dayjs = /*@__PURE__*/getDefaultExportFromCjs(dayjs_minExports);
 
 function timestamp2date(number, stampType) {
+    if (stampType === void 0) { stampType = 'second'; }
     if (stampType === 'second') {
         return dayjs.unix(number).format('YYYY-MM-DD HH:mm:ss');
     }

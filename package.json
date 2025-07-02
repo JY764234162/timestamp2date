@@ -1,7 +1,7 @@
 {
   "name": "timestamp2date",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.16",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -19,7 +19,8 @@
   },
   "scripts": {
     "dev": "npm run build && node ./bin/timestamp2date.js",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "npm version patch && npm publish"
   },
   "files": [
     "bin/*",
