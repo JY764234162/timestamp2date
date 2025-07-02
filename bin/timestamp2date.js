@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-import { init } from '../dist/index.mjs';
+import timestamp2date from '../dist/index.mjs';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import pc from 'picocolors';
-
+import dayjs from 'dayjs';
+import clipboardy from 'clipboardy';
 const {
   blue,
   blueBright,
@@ -67,7 +68,9 @@ async function init() {
       }
     );
     const date = timestamp2date(Number(timeStamp), stampType);
-    console.log(cyan('转换后的结果是：'), date);
+    console.log(cyan('转换后的结果是：'), red(date));
+    clipboardy.writeSync(date); // 复制到剪贴板
+    console.log(green('已复制到剪贴板'));
   } catch (e) {
     console.log(e.message);
     return;

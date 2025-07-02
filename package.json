@@ -1,8 +1,9 @@
 {
   "name": "timestamp2date",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.12",
   "license": "MIT",
+  "type": "module",
   "bin": {
     "t2d": "./bin/timestamp2date.js",
     "timestamp2date": "./bin/timestamp2date.js"
