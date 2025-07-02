@@ -16,9 +16,6 @@ npm i timestamp2date -g
 t2d
 ```
 
-<img style="vertical-align: top;" src="./assets/image.png" alt="logo" height="50px"/>
-
-
 ## es6 模块使用
 
 ```bash
