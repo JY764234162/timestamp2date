@@ -1,3 +1,5 @@
+'use strict';
+
 function getDefaultExportFromCjs (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
@@ -28,5 +30,5 @@ function timestamp2date(number, stampType) {
         return dayjs(number).format('YYYY-MM-DD HH:mm:ss');
 }
 
-export { timestamp2date as default };
-//# sourceMappingURL=index.js.map
+module.exports = timestamp2date;
+//# sourceMappingURL=index.cjs.map

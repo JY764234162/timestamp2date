@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { init } from '../dist/es/index.js';
+import { init } from '../dist/index.mjs';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import pc from 'picocolors';
