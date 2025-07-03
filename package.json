@@ -1,7 +1,7 @@
 {
   "name": "timestamp2date",
   "private": false,
-  "version": "0.0.18",
+  "version": "0.0.19",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -17,10 +17,16 @@
       "require": "./dist/index.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JY764234162/timestamp2date.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JY764234162/timestamp2date/issues"
+  },
+  "homepage": "https://github.com/JY764234162/timestamp2date/blob/main/readme.md",
   "scripts": {
-    "dev": "npm run build && node ./bin/timestamp2date.js",
-    "build": "rollup -c",
-    "release": "npm version patch && npm publish"
+    "build": "rollup -c"
   },
   "files": [
     "bin/*",
