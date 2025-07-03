@@ -1,7 +1,7 @@
 {
   "name": "timestamp2date",
   "private": false,
-  "version": "0.0.19",
+  "version": "0.0.20",
   "license": "MIT",
   "type": "module",
   "bin": {
@@ -17,6 +17,14 @@
       "require": "./dist/index.cjs"
     }
   },
+  "keywords": [
+    "timestamp",
+    "date",
+    "time",
+    "format",
+    "convert",
+    "cli"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JY764234162/timestamp2date.git"
